@@ -11,11 +11,12 @@ export function ReadMoreCTA() {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     setLoading(true);
     setMessage(null);
     setError(null);
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     const data = {
       name: formData.get("name")?.toString() || "",
       email: formData.get("email")?.toString() || "",
@@ -30,21 +31,25 @@ export function ReadMoreCTA() {
         body: JSON.stringify(data),
       });
 
-      const body = await res.json();
-
       if (!res.ok) {
-        setError(body.error || "Something went wrong. Please try again.");
+        setError("Something went wrong. Please try again.");
         return;
       }
 
       setError(null);
       setMessage("Your message has been sent. Thank you!");
-      event.currentTarget.reset();
+      form.reset();
       setOpen(false);
       setShowThanks(true);
       window.setTimeout(() => setShowThanks(false), 3000);
-    } catch (err) {
-      setError("Failed to send message. Please try again.");
+    } catch (err: any) {
+      console.error("Contact form request failed", err);
+      setMessage(null);
+      setError(
+        err instanceof Error && err.message
+          ? `Failed to send message. Please try again.`
+          : "Failed to send message. Please try again."
+      );
     } finally {
       setLoading(false);
     }
@@ -212,9 +217,25 @@ export function ReadMoreCTA() {
         </div>
       )}
       {showThanks && (
-        <div className="fixed inset-0 z-30 flex items-end justify-center pb-10 pointer-events-none">
-          <div className="pointer-events-auto rounded-2xl bg-nw-primary px-5 py-3 text-sm font-medium text-nw-surface shadow-lg">
-            Thank you! Your message has been sent.
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
+          <div className="max-w-sm rounded-3xl bg-nw-surface p-6 text-center shadow-2xl">
+            <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-nw-primary/10">
+              <span className="text-2xl text-nw-primary">✓</span>
+            </div>
+            <h3 className="text-lg font-medium text-nw-primary">
+              Message sent
+            </h3>
+            <p className="mt-2 text-sm text-nw-primary/80">
+              Thank you for reaching out. We&apos;ll get back to you by email
+              as soon as we can.
+            </p>
+            <button
+              type="button"
+              onClick={() => setShowThanks(false)}
+              className="mt-4 rounded-full bg-nw-primary px-6 py-2 text-sm font-medium text-nw-surface shadow-sm hover:bg-nw-primary-strong"
+            >
+              Close
+            </button>
           </div>
         </div>
       )}

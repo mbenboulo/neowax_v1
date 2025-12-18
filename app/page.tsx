@@ -2,6 +2,7 @@ import { HomeHero } from "@/components/HomeHero";
 import { HomeMotivation } from "@/components/HomeMotivation";
 import { HomeTechnology } from "@/components/HomeTechnology";
 import { HomeImpact } from "@/components/HomeImpact";
+import { ReadMoreCTA } from "@/components/ReadMoreCTA";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeMotivation />
       <HomeTechnology />
       <HomeImpact />
+      <ReadMoreCTA />
     </div>
   );
 }
