@@ -5,9 +5,15 @@ import localFont from "next/font/local";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const orangeSquash = localFont({
-  src: "../public/fonts/Orange-Squash-Demo-BF6483cfe8b2bfc.otf",
-  variable: "--font-orange-squash",
+const erstoria = localFont({
+  src: "../public/fonts/Erstoria.ttf",
+  variable: "--font-erstoria",
+  display: "swap",
+});
+
+const poppins = localFont({
+  src: "../public/fonts/Poppins-Regular.ttf",
+  variable: "--font-poppins",
   display: "swap",
 });
 
@@ -37,9 +43,6 @@ function Navbar() {
               priority
             />
           </div>
-          <span className="hidden text-sm font-semibold tracking-wide text-nw-primary md:inline">
-            Neowax Incubator
-          </span>
         </Link>
         <div className="hidden items-center gap-6 text-sm font-medium text-nw-primary md:flex">
           <Link href="/" className="hover:underline">
@@ -164,7 +167,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${orangeSquash.variable} ${geistMono.variable} antialiased bg-nw-page text-nw-primary`}
+        className={`${erstoria.variable} ${poppins.variable} ${geistMono.variable} antialiased bg-nw-page text-nw-primary`}
       >
         <div className="flex min-h-screen flex-col">
           <Navbar />
