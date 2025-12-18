@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import localFont from "next/font/local";
 import { Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const erstoria = localFont({
@@ -174,6 +176,8 @@ export default function RootLayout({
           <main className="mx-auto mt-4 flex w-full max-w-5xl flex-1 flex-col px-4 pb-10 pt-4 md:px-6 lg:px-8">
             {children}
           </main>
+          <Analytics />
+          <SpeedInsights />
           <Footer />
         </div>
       </body>
