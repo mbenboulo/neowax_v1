@@ -2,14 +2,14 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2d282a;
 
   /* Neowax palette */
   --nw-page: #fdf8ee;
   --nw-surface: #fffaf1;
   --nw-footer: #f7e7bc;
   --nw-primary: #2d282a;
-  --nw-primary-strong: #1f191c;
+  --nw-primary-strong: #2d282a;
   --nw-accent: #f7e7bc;
 }
 
@@ -94,6 +94,10 @@ html {
 
 .text-nw-surface {
   color: var(--nw-surface);
+}
+
+.text-nw-accent {
+  color: var(--nw-accent);
 }
 
 .bg-nw-primary {

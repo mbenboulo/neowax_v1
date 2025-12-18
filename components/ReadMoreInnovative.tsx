@@ -6,13 +6,13 @@ export function ReadMoreInnovative() {
     >
       <h2
         id="innovative-title"
-        className="text-2xl font-semibold text-nw-primary md:text-3xl"
+        className="text-2xl font-medium text-nw-primary md:text-3xl"
       >
         Our Innovative Approach
       </h2>
       <div className="mt-6 grid gap-10 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
         <div className="space-y-4 text-base leading-relaxed text-nw-primary/85">
-          <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-nw-primary/60">
+          <h3 className="text-sm font-medium uppercase tracking-[0.18em] text-nw-primary/60">
             Thermal Innovation with Beeswax
           </h3>
           <p>
@@ -28,7 +28,7 @@ export function ReadMoreInnovative() {
             energy requirements and simplifying the hardware.
           </p>
 
-          <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-nw-primary/60">
+          <h3 className="mt-6 text-sm font-medium uppercase tracking-[0.18em] text-nw-primary/60">
             Design for Low-Resource Settings
           </h3>
           <p>
@@ -39,7 +39,7 @@ export function ReadMoreInnovative() {
             for busy clinical teams.
           </p>
 
-          <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-nw-primary/60">
+          <h3 className="mt-6 text-sm font-medium uppercase tracking-[0.18em] text-nw-primary/60">
             Built for Transport and Field Use
           </h3>
           <p>
@@ -52,27 +52,27 @@ export function ReadMoreInnovative() {
         </div>
 
         <div className="space-y-4 rounded-3xl bg-nw-hero-alt p-5 sm:p-6 lg:p-7 shadow-sm text-sm md:text-base text-nw-primary/85">
-          <h3 className="text-sm font-semibold text-nw-primary">
+          <h3 className="text-sm font-medium text-nw-primary">
             Development Journey
           </h3>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>
-              <span className="font-semibold">Concept &amp; exploration:</span>{" "}
+              <span className="font-medium">Concept &amp; exploration:</span>{" "}
               Identifying the key constraints and opportunities for simpler,
               more accessible incubator designs.
             </li>
             <li>
-              <span className="font-semibold">Prototype design:</span>{" "}
+              <span className="font-medium">Prototype design:</span>{" "}
               Integrating beeswax-based thermal buffering with a mechanically
               simple incubator structure.
             </li>
             <li>
-              <span className="font-semibold">Iterative testing:</span>{" "}
+              <span className="font-medium">Iterative testing:</span>{" "}
               Refining performance based on thermal measurements, usability
               feedback, and simulated field conditions.
             </li>
             <li>
-              <span className="font-semibold">Pilot deployment:</span> Planning
+              <span className="font-medium">Pilot deployment:</span> Planning
               real-world evaluations in collaboration with clinicians and
               partner organizations.
             </li>

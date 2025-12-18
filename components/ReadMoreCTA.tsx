@@ -54,7 +54,7 @@ export function ReadMoreCTA() {
     <section className="rounded-3xl bg-nw-section p-6 shadow-sm md:p-10">
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div>
-          <h2 className="text-xl font-semibold text-nw-primary">Get Involved</h2>
+          <h2 className="text-xl font-medium text-nw-primary">Get Involved</h2>
           <p className="mt-2 max-w-xl text-sm leading-relaxed text-nw-primary/85">
             We welcome collaboration with clinicians, researchers, NGOs, and
             partners who share our goal of improving neonatal care in
@@ -65,13 +65,13 @@ export function ReadMoreCTA() {
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="rounded-full bg-nw-primary px-6 py-2 text-sm font-semibold text-nw-surface shadow-sm transition hover:bg-nw-primary-strong"
+            className="rounded-full bg-nw-primary px-6 py-2 text-sm font-medium text-nw-surface shadow-sm transition hover:bg-nw-primary-strong"
           >
             Contact Us
           </button>
           <a
             href="/"
-            className="rounded-full border border-nw-primary/30 bg-nw-surface/80 px-6 py-2 text-sm font-semibold text-nw-primary shadow-sm transition hover:bg-nw-surface"
+            className="rounded-full border border-nw-primary/30 bg-nw-surface/80 px-6 py-2 text-sm font-medium text-nw-primary shadow-sm transition hover:bg-nw-surface"
           >
             Back to Home
           </a>
@@ -83,7 +83,7 @@ export function ReadMoreCTA() {
           <div className="w-full max-w-lg rounded-3xl bg-nw-surface p-6 shadow-lg">
             <div className="mb-4 flex items-start justify-between gap-4">
               <div>
-                <h3 className="text-lg font-semibold text-nw-primary">
+                <h3 className="text-lg font-medium text-nw-primary">
                   Contact Neowax Team
                 </h3>
                 <p className="mt-1 text-xs text-nw-primary/70">
@@ -98,7 +98,7 @@ export function ReadMoreCTA() {
                   setMessage(null);
                   setError(null);
                 }}
-                className="rounded-full border border-black/10 px-2 py-1 text-xs font-semibold text-nw-primary hover:bg-black/5"
+                className="rounded-full border border-black/10 px-2 py-1 text-xs font-medium text-nw-primary hover:bg-black/5"
               >
                 Close
               </button>
@@ -107,7 +107,7 @@ export function ReadMoreCTA() {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid gap-3 md:grid-cols-2">
                 <div className="flex flex-col gap-1 text-sm">
-                  <label htmlFor="name" className="font-semibold text-nw-primary">
+                    <label htmlFor="name" className="font-medium text-nw-primary">
                     Name
                   </label>
                   <input
@@ -121,7 +121,7 @@ export function ReadMoreCTA() {
                 <div className="flex flex-col gap-1 text-sm">
                   <label
                     htmlFor="email"
-                    className="font-semibold text-nw-primary"
+                    className="font-medium text-nw-primary"
                   >
                     Email
                   </label>
@@ -138,7 +138,7 @@ export function ReadMoreCTA() {
               <div className="flex flex-col gap-1 text-sm">
                 <label
                   htmlFor="profession"
-                  className="font-semibold text-nw-primary"
+                  className="font-medium text-nw-primary"
                 >
                   Profession
                 </label>
@@ -170,7 +170,7 @@ export function ReadMoreCTA() {
               <div className="flex flex-col gap-1 text-sm">
                 <label
                   htmlFor="comment"
-                  className="font-semibold text-nw-primary"
+                  className="font-medium text-nw-primary"
                 >
                   Comment
                 </label>
@@ -195,14 +195,14 @@ export function ReadMoreCTA() {
                     setMessage(null);
                     setError(null);
                   }}
-                  className="rounded-full border border-nw-primary/30 bg-white px-5 py-2 font-semibold text-nw-primary hover:bg-black/5"
+                  className="rounded-full border border-nw-primary/30 bg-white px-5 py-2 font-medium text-nw-primary hover:bg-black/5"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
                   disabled={loading}
-                  className="rounded-full bg-nw-primary px-6 py-2 font-semibold text-nw-surface shadow-sm transition hover:bg-nw-primary-strong disabled:cursor-not-allowed disabled:opacity-70"
+                  className="rounded-full bg-nw-primary px-6 py-2 font-medium text-nw-surface shadow-sm transition hover:bg-nw-primary-strong disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {loading ? "Sending..." : "Send Message"}
                 </button>
@@ -213,7 +213,7 @@ export function ReadMoreCTA() {
       )}
       {showThanks && (
         <div className="fixed inset-0 z-30 flex items-end justify-center pb-10 pointer-events-none">
-          <div className="pointer-events-auto rounded-2xl bg-nw-primary px-5 py-3 text-sm font-semibold text-nw-surface shadow-lg">
+          <div className="pointer-events-auto rounded-2xl bg-nw-primary px-5 py-3 text-sm font-medium text-nw-surface shadow-lg">
             Thank you! Your message has been sent.
           </div>
         </div>

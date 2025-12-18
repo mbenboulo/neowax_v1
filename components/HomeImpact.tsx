@@ -7,12 +7,12 @@ export function HomeImpact() {
     >
       <div className="flex flex-col gap-8">
         <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-nw-primary/60">
+          <p className="text-xs font-medium uppercase tracking-[0.18em] text-nw-primary/60">
             Impact
           </p>
-          <h2
+            <h2
             id="impact-title"
-            className="text-2xl font-semibold text-nw-primary md:text-3xl"
+            className="text-2xl font-medium text-nw-primary md:text-3xl"
           >
             Projected Impact
           </h2>
@@ -23,8 +23,8 @@ export function HomeImpact() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-3 lg:gap-6">
-          <div className="flex flex-col gap-2 rounded-2xl bg-nw-surface/80 p-4 sm:p-5 lg:p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-nw-primary">
+            <div className="flex flex-col gap-2 rounded-2xl bg-nw-surface/80 p-4 sm:p-5 lg:p-6 shadow-sm">
+            <h3 className="text-sm font-medium text-nw-primary">
               Reduced mortality
             </h3>
             <p className="text-xs sm:text-sm leading-relaxed text-nw-primary/80">
@@ -33,8 +33,8 @@ export function HomeImpact() {
               mortality.
             </p>
           </div>
-          <div className="flex flex-col gap-2 rounded-2xl bg-nw-surface/80 p-4 sm:p-5 lg:p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-nw-primary">
+            <div className="flex flex-col gap-2 rounded-2xl bg-nw-surface/80 p-4 sm:p-5 lg:p-6 shadow-sm">
+            <h3 className="text-sm font-medium text-nw-primary">
               Increased access
             </h3>
             <p className="text-xs sm:text-sm leading-relaxed text-nw-primary/80">
@@ -42,8 +42,8 @@ export function HomeImpact() {
               and low-resource hospitals to provide incubator care.
             </p>
           </div>
-          <div className="flex flex-col gap-2 rounded-2xl bg-nw-surface/80 p-4 sm:p-5 lg:p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-nw-primary">
+            <div className="flex flex-col gap-2 rounded-2xl bg-nw-surface/80 p-4 sm:p-5 lg:p-6 shadow-sm">
+            <h3 className="text-sm font-medium text-nw-primary">
               Safer transport
             </h3>
             <p className="text-xs sm:text-sm leading-relaxed text-nw-primary/80">

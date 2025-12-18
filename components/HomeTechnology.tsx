@@ -7,12 +7,12 @@ export function HomeTechnology() {
     >
       <div className="grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
         <div className="flex flex-col gap-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-nw-primary/60">
+          <p className="text-xs font-medium uppercase tracking-[0.18em] text-nw-primary/60">
             Technology
           </p>
           <h2
             id="technology-title"
-            className="text-2xl font-semibold text-nw-primary md:text-3xl"
+            className="text-2xl font-medium text-nw-primary md:text-3xl"
           >
             Our Technology
           </h2>
@@ -27,9 +27,9 @@ export function HomeTechnology() {
             reliability for the most fragile patients.
           </p>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:gap-6">
+          <div className="grid gap-4 sm:grid-cols-2 lg:gap-6">
           <div className="rounded-2xl bg-nw-surface/80 p-4 sm:p-5 lg:p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-nw-primary">
+            <h3 className="text-sm font-medium text-nw-primary">
               Beeswax-based thermal buffer
             </h3>
             <p className="mt-2 text-xs sm:text-sm leading-relaxed text-nw-primary/80">
@@ -38,7 +38,7 @@ export function HomeTechnology() {
             </p>
           </div>
           <div className="rounded-2xl bg-nw-surface/80 p-4 sm:p-5 lg:p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-nw-primary">
+            <h3 className="text-sm font-medium text-nw-primary">
               Minimalist mechanical design
             </h3>
             <p className="mt-2 text-xs sm:text-sm leading-relaxed text-nw-primary/80">
@@ -47,7 +47,7 @@ export function HomeTechnology() {
             </p>
           </div>
           <div className="rounded-2xl bg-nw-surface/80 p-4 sm:p-5 lg:p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-nw-primary">
+            <h3 className="text-sm font-medium text-nw-primary">
               Scalable and modular
             </h3>
             <p className="mt-2 text-xs sm:text-sm leading-relaxed text-nw-primary/80">
@@ -56,7 +56,7 @@ export function HomeTechnology() {
             </p>
           </div>
           <div className="rounded-2xl bg-nw-surface/80 p-4 sm:p-5 lg:p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-nw-primary">
+            <h3 className="text-sm font-medium text-nw-primary">
               Designed for real-world constraints
             </h3>
             <p className="mt-2 text-xs sm:text-sm leading-relaxed text-nw-primary/80">

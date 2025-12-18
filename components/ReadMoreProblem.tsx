@@ -6,7 +6,7 @@ export function ReadMoreProblem() {
     >
       <h2
         id="problem-title"
-        className="text-2xl font-semibold text-nw-primary md:text-3xl"
+        className="text-2xl font-medium text-nw-primary md:text-3xl"
       >
         The Problem We Address
       </h2>
@@ -28,7 +28,7 @@ export function ReadMoreProblem() {
         </p>
         <div className="mt-4 grid gap-4 lg:gap-6 text-sm text-nw-primary/85 md:grid-cols-3">
           <div className="rounded-2xl bg-nw-surface/90 p-4 sm:p-5 lg:p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-nw-primary">
+            <h3 className="text-sm font-medium text-nw-primary">
               Healthcare infrastructure gaps
             </h3>
             <p className="mt-2 leading-relaxed">
@@ -37,7 +37,7 @@ export function ReadMoreProblem() {
             </p>
           </div>
           <div className="rounded-2xl bg-nw-surface/90 p-4 sm:p-5 lg:p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-nw-primary">
+            <h3 className="text-sm font-medium text-nw-primary">
               Cost and complexity
             </h3>
             <p className="mt-2 leading-relaxed">
@@ -47,7 +47,7 @@ export function ReadMoreProblem() {
             </p>
           </div>
           <div className="rounded-2xl bg-nw-surface/90 p-4 sm:p-5 lg:p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-nw-primary">
+            <h3 className="text-sm font-medium text-nw-primary">
               Risks during transport
             </h3>
             <p className="mt-2 leading-relaxed">

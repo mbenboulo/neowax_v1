@@ -6,12 +6,12 @@ export function HomeMotivation() {
       aria-labelledby="motivation-title"
     >
       <div className="flex flex-col gap-4">
-        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-nw-primary/60">
+        <p className="text-xs font-medium uppercase tracking-[0.18em] text-nw-primary/60">
           Motivation
         </p>
         <h2
           id="motivation-title"
-          className="text-2xl font-semibold text-nw-primary md:text-3xl"
+          className="text-2xl font-medium text-nw-primary md:text-3xl"
         >
           Why Neowax?
         </h2>

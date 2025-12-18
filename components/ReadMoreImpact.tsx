@@ -6,7 +6,7 @@ export function ReadMoreImpact() {
     >
       <h2
         id="impact-vision-title"
-        className="text-2xl font-semibold text-nw-primary md:text-3xl"
+        className="text-2xl font-medium text-nw-primary md:text-3xl"
       >
         Impact &amp; Future Vision
       </h2>

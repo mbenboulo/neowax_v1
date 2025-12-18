@@ -2,7 +2,7 @@ export function HomeHero() {
   return (
     <section className="grid gap-10 rounded-3xl bg-nw-hero p-6 shadow-sm md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] md:p-10">
       <div className="flex flex-col justify-center gap-6">
-        <h1 className="text-balance text-3xl font-semibold leading-tight text-nw-primary sm:text-4xl md:text-5xl">
+        <h1 className="text-balance text-3xl font-medium leading-tight text-nw-primary sm:text-4xl md:text-5xl">
           Neowax Incubator: Affordable Innovation for Premature Infants
         </h1>
         <p className="max-w-xl text-base leading-relaxed text-nw-primary/80">

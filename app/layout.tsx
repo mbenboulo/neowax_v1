@@ -30,12 +30,12 @@ export const metadata: Metadata = {
 
 function Navbar() {
   return (
-    <header className="sticky top-0 z-30 border-b border-black/5 bg-nw-surface/90 backdrop-blur">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 md:px-6 lg:px-8">
+    <header className="sticky top-0 z-30 border-b border-black/30 bg-nw-primary/95 backdrop-blur">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 text-nw-accent md:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative h-9 w-32">
             <Image
-              src="/Neowax%20Logo%20dark.png"
+              src="/Neowax%20Logo%20light.png"
               alt="Neowax logo"
               fill
               sizes="128px"
@@ -44,22 +44,22 @@ function Navbar() {
             />
           </div>
         </Link>
-        <div className="hidden items-center gap-6 text-sm font-medium text-nw-primary md:flex">
-          <Link href="/" className="hover:underline">
+        <div className="hidden items-center gap-6 text-sm font-medium md:flex">
+          <Link href="/" className="text-white hover:underline">
             Home
           </Link>
-          <Link href="/#motivation" className="hover:underline">
+          <Link href="/#motivation" className="text-white hover:underline">
             Motivation
           </Link>
-          <Link href="/#technology" className="hover:underline">
+          <Link href="/#technology" className="text-white hover:underline">
             Technology
           </Link>
-          <Link href="/#impact" className="hover:underline">
+          <Link href="/#impact" className="text-white hover:underline">
             Impact
           </Link>
           <Link
             href="/read-more"
-            className="rounded-full bg-nw-primary px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-nw-surface shadow-sm transition hover:bg-nw-primary-strong"
+            className="rounded-full bg-nw-surface px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-nw-primary shadow-sm transition hover:bg-nw-surface/90"
           >
             Read More
           </Link>
@@ -68,7 +68,7 @@ function Navbar() {
         <div className="flex items-center gap-2 md:hidden">
           <Link
             href="/read-more"
-            className="rounded-full bg-nw-primary px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-nw-surface shadow-sm transition hover:bg-nw-primary-strong"
+            className="rounded-full bg-nw-surface px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-nw-primary shadow-sm transition hover:bg-nw-surface/90"
           >
             Read More
           </Link>

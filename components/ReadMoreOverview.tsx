@@ -6,7 +6,7 @@ export function ReadMoreOverview() {
     >
       <h2
         id="overview-title"
-        className="text-2xl font-semibold text-nw-primary md:text-3xl"
+        className="text-2xl font-medium text-nw-primary md:text-3xl"
       >
         Project Overview
       </h2>
