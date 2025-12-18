@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Neowax palette */
+  --nw-page: #fdf8ee;
+  --nw-surface: #fffaf1;
+  --nw-footer: #f7e7bc;
+  --nw-primary: #2d282a;
+  --nw-primary-strong: #1f191c;
+  --nw-accent: #f7e7bc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Expose Neowax colors to utilities */
+  --color-nw-page: var(--nw-page);
+  --color-nw-surface: var(--nw-surface);
+  --color-nw-footer: var(--nw-footer);
+  --color-nw-primary: var(--nw-primary);
+  --color-nw-primary-strong: var(--nw-primary-strong);
+  --color-nw-accent: var(--nw-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--nw-page);
+  color: var(--nw-primary);
+  font-family: var(--font-orange-squash), system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utility backgrounds based on Neowax palette */
+.bg-nw-page {
+  background-color: var(--nw-page);
+}
+
+.bg-nw-surface {
+  background-color: var(--nw-surface);
+}
+
+.bg-nw-footer {
+  background-color: var(--nw-footer);
+}
+
+.bg-nw-hero {
+  background: radial-gradient(
+      circle at top left,
+      rgba(247, 231, 188, 0.75),
+      transparent 55%
+    ),
+    var(--nw-surface);
+}
+
+.bg-nw-hero-alt {
+  background: linear-gradient(
+    135deg,
+    rgba(247, 231, 188, 0.8),
+    rgba(247, 231, 188, 0.4)
+  );
+}
+
+.bg-nw-section {
+  background-color: #fffdf7;
+}
+
+.text-nw-primary {
+  color: var(--nw-primary);
+}
+
+.text-nw-surface {
+  color: var(--nw-surface);
+}
+
+.bg-nw-primary {
+  background-color: var(--nw-primary);
+}
+
+.bg-nw-primary-strong {
+  background-color: var(--nw-primary-strong);
+}
+
+.border-nw-primary {
+  border-color: var(--nw-primary);
+}
+
+.border-nw-accent {
+  border-color: var(--nw-accent);
+}
