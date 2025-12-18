@@ -78,29 +78,78 @@ function Navbar() {
 function Footer() {
   return (
     <footer className="mt-12 border-t border-black/5 bg-nw-footer">
-      <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-6 text-sm text-nw-primary/80 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8">
-        <div className="flex items-center gap-3">
-          <div className="relative h-7 w-28">
-            <Image
-              src="/Neowax%20Logo%20dark.png"
-              alt="Neowax logo small"
-              fill
-              sizes="112px"
-              className="object-contain"
-            />
+      <div className="mx-auto flex max-w-5xl flex-col gap-6 px-4 py-6 text-sm text-nw-primary/80 md:px-6 lg:px-8">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center gap-3">
+            <div className="relative h-7 w-28">
+              <Image
+                src="/Neowax%20Logo%20dark.png"
+                alt="Neowax logo small"
+                fill
+                sizes="112px"
+                className="object-contain"
+              />
+            </div>
+            <p className="max-w-xs">
+              Affordable innovation for premature infants, bringing safe
+              incubator care closer to every community.
+            </p>
           </div>
-          <p className="max-w-xs">
-            Affordable innovation for premature infants, bringing safe incubator
-            care closer to every community.
-          </p>
+          <div className="flex flex-wrap items-center gap-4">
+            <Link href="/" className="hover:underline">
+              Home
+            </Link>
+            <Link href="/read-more" className="hover:underline">
+              Read More
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-wrap items-center gap-4">
-          <Link href="/" className="hover:underline">
-            Home
-          </Link>
-          <Link href="/read-more" className="hover:underline">
-            Read More
-          </Link>
+
+        <div className="h-px bg-black/10" />
+
+        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-nw-primary/70">
+            Supported by
+          </p>
+          <div className="flex flex-wrap items-center gap-6 md:justify-end">
+            <div className="relative h-8 w-32 md:h-9 md:w-40">
+              <Image
+                src="/british-council.png"
+                alt="British Council logo"
+                fill
+                sizes="160px"
+                className="object-contain"
+              />
+            </div>
+            <a
+              href="https://www.knust.edu.gh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative h-9 w-40 md:h-10 md:w-48"
+            >
+              <Image
+                src="/knustlogo.png"
+                alt="KNUST logo"
+                fill
+                sizes="192px"
+                className="object-contain"
+              />
+            </a>
+            <a
+              href="https://dipperlab.knust.edu.gh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative h-8 w-40 md:h-9 md:w-48"
+            >
+              <Image
+                src="/Original%20logo-08-01.png"
+                alt="Dipper Lab logo"
+                fill
+                sizes="192px"
+                className="object-contain"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
