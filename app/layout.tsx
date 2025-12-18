@@ -117,7 +117,12 @@ function Footer() {
             Supported by
           </p>
           <div className="flex flex-wrap items-center gap-6 md:justify-end">
-            <div className="relative h-8 w-32 md:h-9 md:w-40">
+            <a
+              href="https://www.britishcouncil.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative h-8 w-32 md:h-9 md:w-40"
+            >
               <Image
                 src="/british-council.png"
                 alt="British Council logo"
@@ -125,7 +130,7 @@ function Footer() {
                 sizes="160px"
                 className="object-contain"
               />
-            </div>
+            </a>
             <a
               href="https://www.knust.edu.gh"
               target="_blank"
